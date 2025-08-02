@@ -1,1 +1,12 @@
+:root {
+  --ff-mono:"JetBrains Mono",menlo,monaco,consolas,"Andale Mono","Courier New",monospace;
+  --color-bg:#0c0c0c;
+  --color-text:#fff;
+}
 
+html,
+body {
+  font-family:var(--ff-mono);
+  background-color:var(--color-bg);
+  color:var(--color-text);
+}
