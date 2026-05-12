@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | sixfortyfour</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  {% seo %}
+</head>
+<body>
+  <header>
+    <a href="/">sixfortyfour</a>
+    <nav>
+      <a href="https://whoami.sixfortyfour.com">about</a>
+      <a href="/archive">archive</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <a href="https://github.com/sixfortyfour">GitHub</a>
+    <a href="https://linkedin.com/in/irangus">LinkedIn</a>
+    <span>© {{ site.time | date: "%Y" }} Iain Angus</span>
+  </footer>
+</body>
+</html>
