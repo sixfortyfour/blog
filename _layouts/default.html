@@ -4,6 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ page.title }} | Writing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   {% seo %}
 </head>
@@ -19,9 +22,13 @@
     {{ content }}
   </main>
   <footer>
-    <a href="https://github.com/sixfortyfour">GitHub</a>
-    <a href="https://linkedin.com/in/irangus">LinkedIn</a>
-    <span>© {{ site.time | date: "%Y" }} Iain Angus</span>
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="https://github.com/sixfortyfour">GitHub</a>
+        <a href="https://linkedin.com/in/irangus">LinkedIn</a>
+      </div>
+      <span class="footer-copy">© {{ site.time | date: "%Y" }} Iain Angus</span>
+    </div>
   </footer>
 </body>
 </html>
